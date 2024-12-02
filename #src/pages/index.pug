@@ -1,0 +1,294 @@
+extends _layout
+
+block main
+	section.section.hero
+		.container
+			.hero-main
+				.hero-main__image-wrapper
+					img(src="assets/img/hero-img-01.png", alt="").hero-main__image
+					p.hero-main__date Июль, 2024
+				.hero-main__content
+					.hero-main__overline.overline событие месяца
+					h1.hero-main__title.h1 Командный дух и здоровый образ жизни
+					p.hero-main__text.body-2 Как рассказала женщина, питомцу по кличке Соня около четырех лет, раньше она жила в приюте. Татьяна забрала ее оттуда и выходила, но позднее животное отправили на временную передержку в город Заполярный, недалеко от
+			.hero-aside
+				button.hero-aside__button.button(data-modal-open="callback") Предложить новость
+				.hero-aside__slider
+					.hero-aside-slide
+						p.hero-aside-slide__caption.caption 25 июля, 12:31
+						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
+					.hero-aside-slide
+						p.hero-aside-slide__caption.caption 25 июля, 12:31
+						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
+					.hero-aside-slide
+						p.hero-aside-slide__caption.caption 25 июля, 12:31
+						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
+					.hero-aside-slide
+						p.hero-aside-slide__caption.caption 25 июля, 12:31
+						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
+					.hero-aside-slide
+						p.hero-aside-slide__caption.caption 25 июля, 12:31
+						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
+					.hero-aside-slide
+						p.hero-aside-slide__caption.caption 25 июля, 12:31
+						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
+					.hero-aside-slide
+						p.hero-aside-slide__caption.caption 25 июля, 12:31
+						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
+					.hero-aside-slide
+						p.hero-aside-slide__caption.caption 25 июля, 12:31
+						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
+					.hero-aside-slide
+						p.hero-aside-slide__caption.caption 25 июля, 12:31
+						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
+				a(href="#").base-button.button.hero-aside__link Все новости
+
+	section.section.events
+		.container
+			.section__header
+				h2.h2.section__title Онлайн-мероприятия
+				a(href="#" data-count="14").section__link.title-link-button Все мероприятия
+			.swiper.events-swiper
+				.swiper-wrapper.events__grid
+					.events-cell.swiper-slide
+						.events-cell__img-wrapper
+							img(src="assets/img/events-img-04.jpg", alt="").events-cell__img
+						.events-cell__info
+							.events-cell__schedule
+								p.events-cell__date.caption 25 октября,
+								p.events-cell__time.caption 12:00
+							p.events-cell__text Вебинар со страховой: возможности для сотрудников
+					.events-cell.events-cell--decor.parallax
+					.events-cell.swiper-slide
+						.events-cell__img-wrapper
+							img(src="assets/img/events-img-02.jpg", alt="").events-cell__img
+						.events-cell__info
+							.events-cell__schedule
+								p.events-cell__date.caption 25 октября,
+								p.events-cell__time.caption 12:00
+							p.events-cell__text Вебинар со страховой: возможности для сотрудников
+					.events-cell.swiper-slide
+						.events-cell__img-wrapper
+							img(src="assets/img/events-img-01.jpg", alt="").events-cell__img
+						.events-cell__info
+							.events-cell__schedule
+								p.events-cell__date.caption 25 октября,
+								p.events-cell__time.caption 12:00
+							p.events-cell__text Вебинар со страховой: возможности для сотрудников
+					.events-cell.swiper-slide
+						.events-cell__img-wrapper
+							img(src="assets/img/events-img-03.jpg", alt="").events-cell__img
+						.events-cell__info
+							.events-cell__schedule
+								p.events-cell__date.caption 25 октября,
+								p.events-cell__time.caption 12:00
+							p.events-cell__text Вебинар со страховой: возможности для сотрудников
+					.events-cell.events-cell--decor.parallax
+				.swiper-pagination
+
+	section.section.polls
+		.container
+			.section__header
+				h2.h2.section__title Опросы
+				a(href="#" data-count="99+").section__link.title-link-button Все опроссы
+			.polls-swiper.swiper
+				.swiper-wrapper
+					a(href="#").polls-card.swiper-slide
+						img.polls-card__img(src="assets/img/polls-01.jpg", alt="")
+						p.polls-card__text Тайм-менеджмент: <br> успеваете ли вы реализовать задачи в запланированный график
+					a(href="#").polls-card.swiper-slide
+						img.polls-card__img(src="assets/img/polls-02.jpg", alt="")
+						p.polls-card__text Новогодние подарки для детей сотрудников
+					a(href="#").polls-card.swiper-slide
+						img.polls-card__img(src="assets/img/polls-03.jpg", alt="")
+						p.polls-card__text Новогодние подарки для детей сотрудников
+					a(href="#").polls-card.swiper-slide
+						img.polls-card__img(src="assets/img/polls-04.jpg", alt="")
+						p.polls-card__text Тайм-менеджмент: <br> успеваете ли вы реализовать задачи в запланированный график
+				.swiper-pagination
+
+	section.section.media
+		.container
+			.media__content
+				.media__content-decor
+				h3.h3.media__title Медиатека
+				p.body-2.media__text Ключевые презентационные материалы о компании, корпоративные фото и видеофайлы, результаты общих собраний сотрудников, база данных
+				button.base-button.media__button
+					| Перейти в медиатеку
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M5.65786 14.3422L14.342 5.65796M14.342 5.65796H6.02347M14.342 5.65796V13.9157" stroke="#038073" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+			img.media__decor(src="assets/img/media-img-02.jpg", alt="")
+
+	section.section.policy
+		.container
+			.section__header
+				h2.h2.section__title Политики компании
+				a(href="#").section__link.title-link-button Все документы
+			.policy-swiper.swiper
+				.swiper-wrapper
+					a(href="#").policy-card.swiper-slide
+						.policy-card__header
+							p.policy-card__type.caption
+								| PDF
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 12C9.9375 12 10.7344 11.6719 11.3906 11.0156C12.0469 10.3594 12.375 9.5625 12.375 8.625C12.375 7.6875 12.0469 6.89062 11.3906 6.23438C10.7344 5.57812 9.9375 5.25 9 5.25C8.0625 5.25 7.26562 5.57812 6.60938 6.23438C5.95312 6.89062 5.625 7.6875 5.625 8.625C5.625 9.5625 5.95312 10.3594 6.60938 11.0156C7.26562 11.6719 8.0625 12 9 12ZM9 10.65C8.4375 10.65 7.95938 10.4531 7.56563 10.0594C7.17188 9.66563 6.975 9.1875 6.975 8.625C6.975 8.0625 7.17188 7.58437 7.56563 7.19063C7.95938 6.79688 8.4375 6.6 9 6.6C9.5625 6.6 10.0406 6.79688 10.4344 7.19063C10.8281 7.58437 11.025 8.0625 11.025 8.625C11.025 9.1875 10.8281 9.66563 10.4344 10.0594C10.0406 10.4531 9.5625 10.65 9 10.65ZM9 14.25C7.175 14.25 5.5125 13.7406 4.0125 12.7219C2.5125 11.7031 1.425 10.3375 0.75 8.625C1.425 6.9125 2.5125 5.54688 4.0125 4.52813C5.5125 3.50938 7.175 3 9 3C10.825 3 12.4875 3.50938 13.9875 4.52813C15.4875 5.54688 16.575 6.9125 17.25 8.625C16.575 10.3375 15.4875 11.7031 13.9875 12.7219C12.4875 13.7406 10.825 14.25 9 14.25Z" fill="white"/>
+								</svg>
+							.policy-card__download
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.99992 13.3335L5.83325 9.16683L6.99992 7.9585L9.16658 10.1252V3.3335H10.8333V10.1252L12.9999 7.9585L14.1666 9.16683L9.99992 13.3335ZM4.99992 16.6668C4.54159 16.6668 4.14922 16.5036 3.82284 16.1772C3.49645 15.8509 3.33325 15.4585 3.33325 15.0002V12.5002H4.99992V15.0002H14.9999V12.5002H16.6666V15.0002C16.6666 15.4585 16.5034 15.8509 16.177 16.1772C15.8506 16.5036 15.4583 16.6668 14.9999 16.6668H4.99992Z" fill="#038073"/>
+								</svg>
+						p.policy-card__text Политика в области качества
+					a(href="#").policy-card.swiper-slide
+						.policy-card__header
+							p.policy-card__type.caption
+								| PDF
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 12C9.9375 12 10.7344 11.6719 11.3906 11.0156C12.0469 10.3594 12.375 9.5625 12.375 8.625C12.375 7.6875 12.0469 6.89062 11.3906 6.23438C10.7344 5.57812 9.9375 5.25 9 5.25C8.0625 5.25 7.26562 5.57812 6.60938 6.23438C5.95312 6.89062 5.625 7.6875 5.625 8.625C5.625 9.5625 5.95312 10.3594 6.60938 11.0156C7.26562 11.6719 8.0625 12 9 12ZM9 10.65C8.4375 10.65 7.95938 10.4531 7.56563 10.0594C7.17188 9.66563 6.975 9.1875 6.975 8.625C6.975 8.0625 7.17188 7.58437 7.56563 7.19063C7.95938 6.79688 8.4375 6.6 9 6.6C9.5625 6.6 10.0406 6.79688 10.4344 7.19063C10.8281 7.58437 11.025 8.0625 11.025 8.625C11.025 9.1875 10.8281 9.66563 10.4344 10.0594C10.0406 10.4531 9.5625 10.65 9 10.65ZM9 14.25C7.175 14.25 5.5125 13.7406 4.0125 12.7219C2.5125 11.7031 1.425 10.3375 0.75 8.625C1.425 6.9125 2.5125 5.54688 4.0125 4.52813C5.5125 3.50938 7.175 3 9 3C10.825 3 12.4875 3.50938 13.9875 4.52813C15.4875 5.54688 16.575 6.9125 17.25 8.625C16.575 10.3375 15.4875 11.7031 13.9875 12.7219C12.4875 13.7406 10.825 14.25 9 14.25Z" fill="white"/>
+								</svg>
+							.policy-card__download
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.99992 13.3335L5.83325 9.16683L6.99992 7.9585L9.16658 10.1252V3.3335H10.8333V10.1252L12.9999 7.9585L14.1666 9.16683L9.99992 13.3335ZM4.99992 16.6668C4.54159 16.6668 4.14922 16.5036 3.82284 16.1772C3.49645 15.8509 3.33325 15.4585 3.33325 15.0002V12.5002H4.99992V15.0002H14.9999V12.5002H16.6666V15.0002C16.6666 15.4585 16.5034 15.8509 16.177 16.1772C15.8506 16.5036 15.4583 16.6668 14.9999 16.6668H4.99992Z" fill="#038073"/>
+								</svg>
+						p.policy-card__text Политика в области качества и неоспоримого чего-то
+					a(href="#").policy-card.swiper-slide
+						.policy-card__header
+							p.policy-card__type.caption
+								| PDF
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 12C9.9375 12 10.7344 11.6719 11.3906 11.0156C12.0469 10.3594 12.375 9.5625 12.375 8.625C12.375 7.6875 12.0469 6.89062 11.3906 6.23438C10.7344 5.57812 9.9375 5.25 9 5.25C8.0625 5.25 7.26562 5.57812 6.60938 6.23438C5.95312 6.89062 5.625 7.6875 5.625 8.625C5.625 9.5625 5.95312 10.3594 6.60938 11.0156C7.26562 11.6719 8.0625 12 9 12ZM9 10.65C8.4375 10.65 7.95938 10.4531 7.56563 10.0594C7.17188 9.66563 6.975 9.1875 6.975 8.625C6.975 8.0625 7.17188 7.58437 7.56563 7.19063C7.95938 6.79688 8.4375 6.6 9 6.6C9.5625 6.6 10.0406 6.79688 10.4344 7.19063C10.8281 7.58437 11.025 8.0625 11.025 8.625C11.025 9.1875 10.8281 9.66563 10.4344 10.0594C10.0406 10.4531 9.5625 10.65 9 10.65ZM9 14.25C7.175 14.25 5.5125 13.7406 4.0125 12.7219C2.5125 11.7031 1.425 10.3375 0.75 8.625C1.425 6.9125 2.5125 5.54688 4.0125 4.52813C5.5125 3.50938 7.175 3 9 3C10.825 3 12.4875 3.50938 13.9875 4.52813C15.4875 5.54688 16.575 6.9125 17.25 8.625C16.575 10.3375 15.4875 11.7031 13.9875 12.7219C12.4875 13.7406 10.825 14.25 9 14.25Z" fill="white"/>
+								</svg>
+							.policy-card__download
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.99992 13.3335L5.83325 9.16683L6.99992 7.9585L9.16658 10.1252V3.3335H10.8333V10.1252L12.9999 7.9585L14.1666 9.16683L9.99992 13.3335ZM4.99992 16.6668C4.54159 16.6668 4.14922 16.5036 3.82284 16.1772C3.49645 15.8509 3.33325 15.4585 3.33325 15.0002V12.5002H4.99992V15.0002H14.9999V12.5002H16.6666V15.0002C16.6666 15.4585 16.5034 15.8509 16.177 16.1772C15.8506 16.5036 15.4583 16.6668 14.9999 16.6668H4.99992Z" fill="#038073"/>
+								</svg>
+						p.policy-card__text Политика в области качества
+					a(href="#").policy-card.swiper-slide
+						.policy-card__header
+							p.policy-card__type.caption
+								| PDF
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 12C9.9375 12 10.7344 11.6719 11.3906 11.0156C12.0469 10.3594 12.375 9.5625 12.375 8.625C12.375 7.6875 12.0469 6.89062 11.3906 6.23438C10.7344 5.57812 9.9375 5.25 9 5.25C8.0625 5.25 7.26562 5.57812 6.60938 6.23438C5.95312 6.89062 5.625 7.6875 5.625 8.625C5.625 9.5625 5.95312 10.3594 6.60938 11.0156C7.26562 11.6719 8.0625 12 9 12ZM9 10.65C8.4375 10.65 7.95938 10.4531 7.56563 10.0594C7.17188 9.66563 6.975 9.1875 6.975 8.625C6.975 8.0625 7.17188 7.58437 7.56563 7.19063C7.95938 6.79688 8.4375 6.6 9 6.6C9.5625 6.6 10.0406 6.79688 10.4344 7.19063C10.8281 7.58437 11.025 8.0625 11.025 8.625C11.025 9.1875 10.8281 9.66563 10.4344 10.0594C10.0406 10.4531 9.5625 10.65 9 10.65ZM9 14.25C7.175 14.25 5.5125 13.7406 4.0125 12.7219C2.5125 11.7031 1.425 10.3375 0.75 8.625C1.425 6.9125 2.5125 5.54688 4.0125 4.52813C5.5125 3.50938 7.175 3 9 3C10.825 3 12.4875 3.50938 13.9875 4.52813C15.4875 5.54688 16.575 6.9125 17.25 8.625C16.575 10.3375 15.4875 11.7031 13.9875 12.7219C12.4875 13.7406 10.825 14.25 9 14.25Z" fill="white"/>
+								</svg>
+							.policy-card__download
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.99992 13.3335L5.83325 9.16683L6.99992 7.9585L9.16658 10.1252V3.3335H10.8333V10.1252L12.9999 7.9585L14.1666 9.16683L9.99992 13.3335ZM4.99992 16.6668C4.54159 16.6668 4.14922 16.5036 3.82284 16.1772C3.49645 15.8509 3.33325 15.4585 3.33325 15.0002V12.5002H4.99992V15.0002H14.9999V12.5002H16.6666V15.0002C16.6666 15.4585 16.5034 15.8509 16.177 16.1772C15.8506 16.5036 15.4583 16.6668 14.9999 16.6668H4.99992Z" fill="#038073"/>
+								</svg>
+						p.policy-card__text Политика в области качества
+				.swiper-pagination
+
+	section.section.useful
+		.container
+			.section__header
+				h2.h2.section__title Полезное и актуальное
+			.useful__grid
+				.useful-days
+					.useful-days__numbers 247
+					h3.useful-days__title.h3 Безопасных дней в году
+				.useful-card.useful-card--1
+					img.useful-card__decor.useful-card__decor--1(src="assets/img/useful-decor-01.svg", alt="")
+					a.base-button.useful-card__button.useful-card__button--white(href="hse.techofs")
+						| Перейти на hse.techofs
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#038073" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+				.useful-card.useful-card--2
+					a.base-button.useful-card__button(href="#")
+						| Карта наблюдения
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+				.useful-card.useful-card--3
+					.useful-card__decor.useful-card__decor--2
+					img(src="assets/img/useful-logo.svg", alt="").useful-card__logo
+					h3.useful-card__title.h3 Устойчивое развитие
+					p.body-2.useful-card__text Компания придерживается принципов устойчивого развития бизнеса, а значит следует стандартам промышленной безопасности, демонстрирует ответственное отношение к окружающей среде и стремиться создавать благоприятные социальные условия
+				.useful-card.useful-card--4
+					img.useful-card__decor.useful-card__decor--3(src="assets/img/useful-decor-02.svg", alt="")
+					button.base-button.useful-card__button.useful-card__button--white(data-modal-open="info")
+						| Люди и окружающая среда
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.5046 4.94189L15.563 10.0002L10.5046 15.0586" stroke="#038073" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M4.43701 10.0005L15.5452 10.0005" stroke="#038073" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+
+	section.section.ecosystem
+		.container
+			.section__header
+				h2.h2.section__title Экосистема
+			.ecosystem-swiper.swiper
+				.swiper-wrapper.ecosystem__grid
+					a(href="https://solv.techofs.com").ecosystem-cell.swiper-slide
+						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-01.jpg", alt="")
+						p.ecosystem-cell__text.body-2
+							| Solv
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					a(href="https://erp.techofs.com/ERP/ru_RU/").ecosystem-cell.swiper-slide
+						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-02.jpg", alt="")
+						p.ecosystem-cell__text.body-2
+							| Диадок
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					a(href="https://diadoc.kontur.ru").ecosystem-cell.swiper-slide
+						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-03.jpg", alt="")
+						p.ecosystem-cell__text.body-2
+							| 1C: ERP
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					a(href="https://cgate.ath.ru/").ecosystem-cell.swiper-slide
+						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-04.jpg", alt="")
+						p.ecosystem-cell__text.body-2
+							| АТН
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					a(href="https://lk.techofs.com/").ecosystem-cell.swiper-slide
+						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-05.jpg", alt="")
+						p.ecosystem-cell__text.body-2
+							| iКоннект
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					a(href="https://do.techofs.com/DO30").ecosystem-cell.swiper-slide
+						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-06.jpg", alt="")
+						p.ecosystem-cell__text.body-2
+							| 1C: DOC
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					a(href="https://ecos.techofs.com/").ecosystem-cell.swiper-slide
+						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-07.jpg", alt="")
+						p.ecosystem-cell__text.body-2
+							| Экос
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+				.swiper-pagination
+
+	section.section.callback
+		.container
+			.section__header
+				h2.h2.section__title 1С: обратная связь
+			.callback__row
+				.callback-card
+					img.callback-card__logo(src="assets/img/logo-1C.svg", alt="")
+					a(href="#").body-2.callback-card__link
+						| Инструкция и обучающие материалы для пользователя 1С
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.26659 12.0002L3.33325 11.0668L9.73325 4.66683H3.99992V3.3335H11.9999V11.3335H10.6666V5.60016L4.26659 12.0002Z" fill="#494949"/>
+						</svg>
+				.callback-card
+					.callback-card__info
+						h3.h3.callback-card__title Техподдержка 1С
+						p.body-2.callback-card__text Если у вас есть идея, как улучшить работу 1С, напишите нам
+					button.base-button.callback-card__button Обратиться
+				.callback-card
+					.callback-card__info
+						h3.h3.callback-card__title Развиваем экосистему вместе
+						p.body-2.callback-card__text Если у вас есть идея, как улучшить экосистему, напишите нам
+					button.base-button.callback-card__button(data-modal-open="callback") Предложить идею

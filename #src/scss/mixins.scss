@@ -1,0 +1,29 @@
+@mixin r($breakpoint) {
+	@media screen and (max-width: $breakpoint) {
+		@content;
+	}
+}
+@mixin rmin($breakpoint) {
+	@media screen and (min-width: $breakpoint) {
+		@content;
+	}
+}
+@mixin fontfamily($name, $path, $weight: 400, $style: normal, $ttf: false, $woff: false, $woff2: false, $eot: false) {
+	@font-face {
+		font-family: '#{$name}';
+		@if $eot == true { src: url('#{$path}.eot'); }
+		@if $woff2 == true { src: url('#{$path}.woff2') format('woff2'); }
+		@if $woff == true { src: url('#{$path}.woff') format('woff'); }
+		@if $ttf == true { src: url('#{$path}.ttf') format('truetype'); }
+		font-style: $style;
+		font-weight: $weight;
+		font-display: swap;
+	}
+}
+@mixin hover {
+	@media (hover: hover) {
+		&:hover {
+			@content;
+		}
+	}
+}
