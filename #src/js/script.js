@@ -20,33 +20,27 @@ if(headerBurger) {
 
 // PARALLAX
 if (document.querySelector('.parallax')) {
+	const parallaxElements = document.querySelectorAll('.parallax');
+
 	window.addEventListener('scroll', () => {
-			const parallaxElements = document.querySelectorAll('.parallax');
+			const centerY = window.innerHeight / 2;
 
-			parallaxElements.forEach((item) => {
+			parallaxElements.forEach(item => {
 					const rect = item.getBoundingClientRect();
-					const windowHeight = window.innerHeight;
+					if (rect.top < window.innerHeight && rect.bottom > 0) {
+							const elementCenter = rect.top + rect.height;
+							const offsetFromCenter = elementCenter - centerY;
 
-					// Проверяем, находится ли элемент в пределах видимой области
-					if (rect.top < windowHeight && rect.bottom > 0) {
-							const elementHeight = rect.height;
-							const scrollY = window.scrollY;
-							const offsetTop = item.offsetTop;
-							const relativeScroll = scrollY - offsetTop;
-
-							// Рассчитываем ограниченное смещение параллакса
-							const maxOffset = elementHeight * 0.5; // Уменьшить максимальное смещение
-							const parallaxOffset = Math.max(-maxOffset, Math.min(maxOffset, relativeScroll * 0.3 - elementHeight)); // Сила эффекта уменьшена
-
-							// Добавляем запас по высоте фона
-							// const backgroundSize = `${item.clientWidth}px ${elementHeight * 1.5}px`;
+							const minOffset = 0;
+							const maxOffset = rect.height;
+							const parallaxOffset = Math.min(minOffset, Math.max(-maxOffset, -offsetFromCenter * 0.3));
 
 							item.style.backgroundPositionY = `${parallaxOffset}px`;
-							// item.style.backgroundSize = backgroundSize;
 					}
 			});
 	});
 }
+
 
 // SWIPER
 if(document.querySelector('.events-swiper') || document.querySelector('.ecosystem-swiper')) {

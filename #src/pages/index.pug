@@ -12,33 +12,33 @@ block main
 					h1.hero-main__title.h1 Командный дух и здоровый образ жизни
 					p.hero-main__text.body-2 Как рассказала женщина, питомцу по кличке Соня около четырех лет, раньше она жила в приюте. Татьяна забрала ее оттуда и выходила, но позднее животное отправили на временную передержку в город Заполярный, недалеко от
 			.hero-aside
-				button.hero-aside__button.button(data-modal-open="callback") Предложить новость
+				button.hero-aside__button.button(data-modal-open="callback-idea-news") Предложить новость
 				.hero-aside__slider
-					.hero-aside-slide
+					a(href="#").hero-aside-slide
 						p.hero-aside-slide__caption.caption 25 июля, 12:31
 						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
-					.hero-aside-slide
+					a(href="#").hero-aside-slide
 						p.hero-aside-slide__caption.caption 25 июля, 12:31
 						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
-					.hero-aside-slide
+					a(href="#").hero-aside-slide
 						p.hero-aside-slide__caption.caption 25 июля, 12:31
 						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
-					.hero-aside-slide
+					a(href="#").hero-aside-slide
 						p.hero-aside-slide__caption.caption 25 июля, 12:31
 						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
-					.hero-aside-slide
+					a(href="#").hero-aside-slide
 						p.hero-aside-slide__caption.caption 25 июля, 12:31
 						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
-					.hero-aside-slide
+					a(href="#").hero-aside-slide
 						p.hero-aside-slide__caption.caption 25 июля, 12:31
 						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
-					.hero-aside-slide
+					a(href="#").hero-aside-slide
 						p.hero-aside-slide__caption.caption 25 июля, 12:31
 						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
-					.hero-aside-slide
+					a(href="#").hero-aside-slide
 						p.hero-aside-slide__caption.caption 25 июля, 12:31
 						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
-					.hero-aside-slide
+					a(href="#").hero-aside-slide
 						p.hero-aside-slide__caption.caption 25 июля, 12:31
 						p.hero-aside-slide__text.body-2 Выходные и праздничные дни в ноябре
 				a(href="#").base-button.button.hero-aside__link Все новости
@@ -118,7 +118,7 @@ block main
 					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M5.65786 14.3422L14.342 5.65796M14.342 5.65796H6.02347M14.342 5.65796V13.9157" stroke="#038073" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
-			img.media__decor(src="assets/img/media-img-02.jpg", alt="")
+			.media__decor.parallax
 
 	section.section.policy
 		.container
@@ -186,7 +186,6 @@ block main
 					.useful-days__numbers 247
 					h3.useful-days__title.h3 Безопасных дней в году
 				.useful-card.useful-card--1
-					img.useful-card__decor.useful-card__decor--1(src="assets/img/useful-decor-01.svg", alt="")
 					a.base-button.useful-card__button.useful-card__button--white(href="hse.techofs")
 						| Перейти на hse.techofs
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -200,7 +199,6 @@ block main
 						</svg>
 				.useful-card.useful-card--3
 					.useful-card__decor.useful-card__decor--2
-					img(src="assets/img/useful-logo.svg", alt="").useful-card__logo
 					h3.useful-card__title.h3 Устойчивое развитие
 					p.body-2.useful-card__text Компания придерживается принципов устойчивого развития бизнеса, а значит следует стандартам промышленной безопасности, демонстрирует ответственное отношение к окружающей среде и стремиться создавать благоприятные социальные условия
 				.useful-card.useful-card--4
@@ -246,22 +244,29 @@ block main
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
-					a(href="https://lk.techofs.com/").ecosystem-cell.swiper-slide
+					a(href="https://solv.techofs.com").ecosystem-cell.swiper-slide
 						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-05.jpg", alt="")
+						p.ecosystem-cell__text.body-2
+							| Facility Service
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					a(href="https://lk.techofs.com/").ecosystem-cell.swiper-slide
+						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-06.jpg", alt="")
 						p.ecosystem-cell__text.body-2
 							| iКоннект
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
 					a(href="https://do.techofs.com/DO30").ecosystem-cell.swiper-slide
-						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-06.jpg", alt="")
+						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-07.jpg", alt="")
 						p.ecosystem-cell__text.body-2
 							| 1C: DOC
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
 					a(href="https://ecos.techofs.com/").ecosystem-cell.swiper-slide
-						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-07.jpg", alt="")
+						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-08.jpg", alt="")
 						p.ecosystem-cell__text.body-2
 							| Экос
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -286,9 +291,9 @@ block main
 					.callback-card__info
 						h3.h3.callback-card__title Техподдержка 1С
 						p.body-2.callback-card__text Если у вас есть идея, как улучшить работу 1С, напишите нам
-					button.base-button.callback-card__button Обратиться
+					button.base-button.callback-card__button(data-modal-open="callback") Обратиться
 				.callback-card
 					.callback-card__info
 						h3.h3.callback-card__title Развиваем экосистему вместе
 						p.body-2.callback-card__text Если у вас есть идея, как улучшить экосистему, напишите нам
-					button.base-button.callback-card__button(data-modal-open="callback") Предложить идею
+					button.base-button.callback-card__button(data-modal-open="callback-idea") Предложить идею
