@@ -89,24 +89,39 @@ if(document.querySelector('.events-swiper') || document.querySelector('.ecosyste
 
 	window.addEventListener('resize', handleSwiper);
 }
-
 if(document.querySelector('.polls-swiper')) {
 	const swiper = new Swiper('.polls-swiper', {
-		slidesPerView: 'auto',
+		slidesPerView: 1,
 		spaceBetween: 24,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 'auto',
+			},
+			580: {
+				slidesPerView: 2,
+			}
 		}
 	});
 }
 if(document.querySelector('.policy-swiper')) {
 	const swiper = new Swiper('.policy-swiper', {
-		slidesPerView: 'auto',
+		slidesPerView: 1,
 		spaceBetween: 24,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 'auto',
+			},
+			480: {
+				slidesPerView: 2,
+			}
 		}
 	});
 }

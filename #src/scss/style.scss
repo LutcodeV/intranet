@@ -663,14 +663,16 @@ body {
 	&--decor:nth-of-type(2) {
 		background: url(../img/events-img-decor.jpg) no-repeat center/cover;
 		mask: url(../img/events-mask-01.svg) no-repeat center/cover;
+		-webkit-mask: url(../img/events-mask-01.svg) no-repeat center/cover;
 		background-size: 200% 200%;
-		background-attachment: fixed;
+		background-position: center center;
 	}
 	&--decor:nth-child(6) {
 		background: url(../img/events-img-decor.jpg) no-repeat center/cover;
 		mask: url(../img/events-mask-02.svg) no-repeat center/cover;
+		-webkit-mask: url(../img/events-mask-02.svg) no-repeat center/cover;
 		background-size: 200% 200%;
-		background-attachment: fixed;
+		background-position: center center;
 	}
 	&:not(&--decor) {
 		@include hover {
@@ -737,6 +739,9 @@ body {
 			color: var(--CLOVER);
 		}
 	}
+	@include r(768px) {
+		max-width: 100%;
+	}
 }
 .polls-swiper {
 	@include r(768px) {
@@ -773,7 +778,7 @@ body {
 		width: 100%;
 		background: var(--CLOVER);
 		&>*:not(.media__content-decor) {
-			z-index: var(--z-index-default);
+			z-index: 2;
 		}
 	}
 	&__content-decor {
@@ -781,13 +786,16 @@ body {
 		width: 100%;
 		height: 100%;
 		top: 0;
+		z-index: 1;
 		left: 0;
+		pointer-events: none;
 		border-radius: 16px;
-		background: url("../img/events-img-decor.jpg") no-repeat center/cover;
-		mask: url(../img/media-mask-01.svg) no-repeat center/cover;
-		background-size: auto 1440px;
+		background: url("../img/events-img-decor.jpg") no-repeat;
+		background-size: 200% 200%;
 		background-position: center center;
-		background-attachment: fixed;
+		mask: url(../img/media-mask-01.svg) no-repeat center/cover;
+		-webkit-mask: url(../img/media-mask-01.svg) no-repeat center/cover;
+		// background-size: 200% 200%;
 	}
 	&__title {
 		color: var(--WHITE);
@@ -804,6 +812,7 @@ body {
 	@include r(768px) {
 		&__content {
 			min-height: 480px;
+			padding: 24px 16px;
 		}
 		&__button {
 			width: 100%;
@@ -819,6 +828,7 @@ body {
 .policy-card {
 	padding: 16px;
 	display: flex;
+	width: 100%;
 	flex-direction: column;
 	transition: .3s ease;
 	gap: 24px;
@@ -862,6 +872,9 @@ body {
 		.polls-card__text {
 			color: var(--CLOVER);
 		}
+	}
+	@include r(768px) {
+		max-width: 100%;
 	}
 }
 
@@ -911,25 +924,27 @@ body {
 	&__numbers {
 		font-size: 264px;
 		font-weight: 900;
-		leading-trim: both;
-		text-edge: cap;
-		line-height: 210px;
-		letter-spacing: 8%;
-		height: 210px;
+		line-height: normal;
+		letter-spacing: 21px;
 		background: url("../img/events-img-decor.jpg") no-repeat center/cover;
 		background-clip: text;
-		background-attachment: fixed;
-		background-size: auto 1440px;
+		margin-bottom: -72px;
+		margin-top: -36px;
+		background-size: 200% 200%;
+		background-position: center center;
 		-webkit-background-clip: text; /* Для поддержки в WebKit */
 		-webkit-text-fill-color: transparent; /* Для старых браузеров */
 	}
 	@include r(768px) {
 		min-height: 320px;
 		gap: 17px;
+		padding: 0;
 		&__numbers {
 			font-size: 181px;
-			line-height: 125px;
-			height: 125px;
+			letter-spacing: 14px;
+			margin-top: -24px;
+			margin-bottom: -48px;
+			line-height: normal;
 			width: 100%;
 			text-align: center;
 		}
@@ -954,9 +969,10 @@ body {
 			top: 0;
 			left: unset;
 			background: url('../img/events-img-decor.jpg') no-repeat center/cover;
-			background-attachment: fixed;
-			background-size: auto 1440px;
+			background-size: 200% 200%;
+			background-position: center center;
 			mask: url(../img/useful-mask-01.svg) no-repeat center/cover;
+			-webkit-mask: url(../img/useful-mask-01.svg) no-repeat center/cover;
 		}
 	}
 	&__button {
@@ -980,33 +996,33 @@ body {
 		z-index: var(--z-index-default);
 		max-width: 646px;
 	}
+	&__decor-1 {
+		position: absolute !important;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url("../img/events-img-decor.jpg") no-repeat center/cover;
+		mask: url(../img/media-mask-01.svg) no-repeat center/cover;
+		-webkit-mask: url(../img/media-mask-01.svg) no-repeat center/cover;
+		background-position: center center;
+		background-size: 200% 200%;
+		border-radius: 16px;
+	}
 	&--1 {
 		background: var(--CLOVER);
+		position: relative;
+		border-radius: 16px;
+		overflow: hidden;
 		// background: url(../img/useful-img-01.jpg) no-repeat center/cover;
 		* {
 			position: relative;
 			z-index: 1;
 		}
-		&::before {
-			background: url("../img/events-img-decor.jpg") no-repeat center/cover;
-			mask: url(../img/media-mask-01.svg) no-repeat center/cover;
-			max-height: 100%;
-			background-size: auto 1440px;
-			background-position: center center;
-			background-attachment: fixed;
-			border-radius: 16px;
-			position: absolute;
-			top: 0;
-			left: 0;
-			content: '';
-			width: 100%;
-			z-index: 0;
-			height: 100%;
-		}
 	}
 	&--2 {
 		background: url(../img/useful-img-02.jpg) no-repeat center/cover;
-		background-size: 120% 120%;
+		background-size: cover;
 	}
 	&--3 {
 		grid-column: span 3;
@@ -1018,8 +1034,8 @@ body {
 	}
 	&--4 {
 		background: url(../img/events-img-decor.jpg) no-repeat center/cover;
-		background-attachment: fixed;
-		background-size: auto 1440px;
+		background-position: center center;
+		background-size: 200% 200%;
 	}
 	@include r(1119px) {
 		&--3 {

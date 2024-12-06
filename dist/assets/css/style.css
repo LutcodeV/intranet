@@ -836,18 +836,18 @@ body {
 
 .events-cell--decor:nth-of-type(2) {
   background: url(../img/events-img-decor.jpg) no-repeat center/cover;
-  -webkit-mask: url(../img/events-mask-01.svg) no-repeat center/cover;
   mask: url(../img/events-mask-01.svg) no-repeat center/cover;
+  -webkit-mask: url(../img/events-mask-01.svg) no-repeat center/cover;
   background-size: 200% 200%;
-  background-attachment: fixed;
+  background-position: center center;
 }
 
 .events-cell--decor:nth-child(6) {
   background: url(../img/events-img-decor.jpg) no-repeat center/cover;
-  -webkit-mask: url(../img/events-mask-02.svg) no-repeat center/cover;
   mask: url(../img/events-mask-02.svg) no-repeat center/cover;
+  -webkit-mask: url(../img/events-mask-02.svg) no-repeat center/cover;
   background-size: 200% 200%;
-  background-attachment: fixed;
+  background-position: center center;
 }
 
 .polls__page {
@@ -932,7 +932,7 @@ body {
 }
 
 .media__content > *:not(.media__content-decor) {
-  z-index: var(--z-index-default);
+  z-index: 2;
 }
 
 .media__content-decor {
@@ -940,14 +940,15 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
+  z-index: 1;
   left: 0;
+  pointer-events: none;
   border-radius: 16px;
-  background: url("../img/events-img-decor.jpg") no-repeat center/cover;
-  -webkit-mask: url(../img/media-mask-01.svg) no-repeat center/cover;
-  mask: url(../img/media-mask-01.svg) no-repeat center/cover;
-  background-size: auto 1440px;
+  background: url("../img/events-img-decor.jpg") no-repeat;
+  background-size: 200% 200%;
   background-position: center center;
-  background-attachment: fixed;
+  mask: url(../img/media-mask-01.svg) no-repeat center/cover;
+  -webkit-mask: url(../img/media-mask-01.svg) no-repeat center/cover;
 }
 
 .media__title {
@@ -970,6 +971,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1064,15 +1066,14 @@ body {
 .useful-days__numbers {
   font-size: 264px;
   font-weight: 900;
-  leading-trim: both;
-  text-edge: cap;
-  line-height: 210px;
-  letter-spacing: 8%;
-  height: 210px;
+  line-height: normal;
+  letter-spacing: 21px;
   background: url("../img/events-img-decor.jpg") no-repeat center/cover;
   background-clip: text;
-  background-attachment: fixed;
-  background-size: auto 1440px;
+  margin-bottom: -72px;
+  margin-top: -36px;
+  background-size: 200% 200%;
+  background-position: center center;
   -webkit-background-clip: text;
   /* Для поддержки в WebKit */
   -webkit-text-fill-color: transparent;
@@ -1111,10 +1112,10 @@ body {
   top: 0;
   left: unset;
   background: url("../img/events-img-decor.jpg") no-repeat center/cover;
-  background-attachment: fixed;
-  background-size: auto 1440px;
-  -webkit-mask: url(../img/useful-mask-01.svg) no-repeat center/cover;
+  background-size: 200% 200%;
+  background-position: center center;
   mask: url(../img/useful-mask-01.svg) no-repeat center/cover;
+  -webkit-mask: url(../img/useful-mask-01.svg) no-repeat center/cover;
 }
 
 .useful-card__button--white {
@@ -1140,8 +1141,25 @@ body {
   max-width: 646px;
 }
 
+.useful-card__decor-1 {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/events-img-decor.jpg") no-repeat center/cover;
+  mask: url(../img/media-mask-01.svg) no-repeat center/cover;
+  -webkit-mask: url(../img/media-mask-01.svg) no-repeat center/cover;
+  background-position: center center;
+  background-size: 200% 200%;
+  border-radius: 16px;
+}
+
 .useful-card--1 {
   background: var(--CLOVER);
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .useful-card--1 * {
@@ -1149,27 +1167,9 @@ body {
   z-index: 1;
 }
 
-.useful-card--1::before {
-  background: url("../img/events-img-decor.jpg") no-repeat center/cover;
-  -webkit-mask: url(../img/media-mask-01.svg) no-repeat center/cover;
-  mask: url(../img/media-mask-01.svg) no-repeat center/cover;
-  max-height: 100%;
-  background-size: auto 1440px;
-  background-position: center center;
-  background-attachment: fixed;
-  border-radius: 16px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  z-index: 0;
-  height: 100%;
-}
-
 .useful-card--2 {
   background: url(../img/useful-img-02.jpg) no-repeat center/cover;
-  background-size: 120% 120%;
+  background-size: cover;
 }
 
 .useful-card--3 {
@@ -1185,8 +1185,8 @@ body {
 
 .useful-card--4 {
   background: url(../img/events-img-decor.jpg) no-repeat center/cover;
-  background-attachment: fixed;
-  background-size: auto 1440px;
+  background-position: center center;
+  background-size: 200% 200%;
 }
 
 .ecosystem-swiper {
@@ -2575,6 +2575,10 @@ body {
     display: none;
   }
 
+  .polls-card {
+    max-width: 100%;
+  }
+
   .polls-swiper {
     margin-left: -12px;
     margin-right: -12px;
@@ -2584,6 +2588,7 @@ body {
 
   .media__content {
     min-height: 480px;
+    padding: 24px 16px;
   }
 
   .media__button {
@@ -2592,6 +2597,10 @@ body {
 
   .media__decor {
     display: none;
+  }
+
+  .policy-card {
+    max-width: 100%;
   }
 
   .policy-swiper {
@@ -2614,12 +2623,15 @@ body {
   .useful-days {
     min-height: 320px;
     gap: 17px;
+    padding: 0;
   }
 
   .useful-days__numbers {
     font-size: 181px;
-    line-height: 125px;
-    height: 125px;
+    letter-spacing: 14px;
+    margin-top: -24px;
+    margin-bottom: -48px;
+    line-height: normal;
     width: 100%;
     text-align: center;
   }

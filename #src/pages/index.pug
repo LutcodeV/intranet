@@ -110,7 +110,7 @@ block main
 	section.section.media
 		.container
 			.media__content
-				.media__content-decor
+				.parallax.media__content-decor
 				h3.h3.media__title Медиатека
 				p.body-2.media__text Ключевые презентационные материалы о компании, корпоративные фото и видеофайлы, результаты общих собраний сотрудников, база данных
 				button.base-button.media__button
@@ -183,9 +183,10 @@ block main
 				h2.h2.section__title Полезное и актуальное
 			.useful__grid
 				.useful-days
-					.useful-days__numbers 247
+					p.useful-days__numbers.parallax 247
 					h3.useful-days__title.h3 Безопасных дней в году
 				.useful-card.useful-card--1
+					.useful-card__decor-1.parallax
 					a.base-button.useful-card__button.useful-card__button--white(href="hse.techofs")
 						| Перейти на hse.techofs
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,11 +199,11 @@ block main
 							<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 				.useful-card.useful-card--3
-					.useful-card__decor.useful-card__decor--2
+					.useful-card__decor.useful-card__decor--2.parallax
 					h3.useful-card__title.h3 Устойчивое развитие
 					p.body-2.useful-card__text Компания придерживается принципов устойчивого развития бизнеса, а значит следует стандартам промышленной безопасности, демонстрирует ответственное отношение к окружающей среде и стремиться создавать благоприятные социальные условия
-				.useful-card.useful-card--4
-					img.useful-card__decor.useful-card__decor--3(src="assets/img/useful-decor-02.svg", alt="")
+				.useful-card.useful-card--4.parallax
+					//- img.useful-card__decor.useful-card__decor--3(src="assets/img/useful-decor-02.svg", alt="")
 					button.base-button.useful-card__button.useful-card__button--white(data-modal-open="info")
 						| Люди и окружающая среда
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -223,14 +224,14 @@ block main
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
-					a(href="https://erp.techofs.com/ERP/ru_RU/").ecosystem-cell.swiper-slide
+					a(href="https://diadoc.kontur.ru").ecosystem-cell.swiper-slide
 						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-02.jpg", alt="")
 						p.ecosystem-cell__text.body-2
 							| Диадок
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
-					a(href="https://diadoc.kontur.ru").ecosystem-cell.swiper-slide
+					a(href="https://erp.techofs.com/ERP/ru_RU/").ecosystem-cell.swiper-slide
 						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-03.jpg", alt="")
 						p.ecosystem-cell__text.body-2
 							| 1C: ERP
@@ -244,7 +245,7 @@ block main
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.65786 14.342L14.342 5.65771M14.342 5.65771H6.02347M14.342 5.65771V13.9155" stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
-					a(href="https://solv.techofs.com").ecosystem-cell.swiper-slide
+					a(href="https://facility.techofs.com/").ecosystem-cell.swiper-slide
 						img.ecosystem-cell__img(src="assets/img/ecosystem-logo-05.jpg", alt="")
 						p.ecosystem-cell__text.body-2
 							| Facility Service
