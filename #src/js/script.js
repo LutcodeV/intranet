@@ -116,8 +116,11 @@ if(document.querySelector('.policy-swiper')) {
 			clickable: true,
 		},
 		breakpoints: {
+			1119: {
+				slidesPerView: 4,
+			},
 			768: {
-				slidesPerView: 'auto',
+				slidesPerView: 3,
 			},
 			480: {
 				slidesPerView: 2,

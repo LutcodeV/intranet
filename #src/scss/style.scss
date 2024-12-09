@@ -834,7 +834,6 @@ body {
 	gap: 24px;
 	border-radius: 16px;
 	background: var(--WHITE);
-	max-width: 332px;
 	height: auto;
 	&__img {
 		max-height: 148px;
@@ -879,6 +878,9 @@ body {
 }
 
 .policy-swiper {
+	.swiper-pagination {
+		display: flex;
+	}
 	@include r(768px) {
 		margin-left: -12px;
 		margin-right: -12px;

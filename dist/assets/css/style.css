@@ -981,7 +981,6 @@ body {
   gap: 24px;
   border-radius: 16px;
   background: var(--WHITE);
-  max-width: 332px;
   height: auto;
 }
 
@@ -1029,6 +1028,12 @@ body {
 .policy-card__download {
   padding: 3px;
   background: var(--SAND);
+}
+
+.policy-swiper .swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .useful__grid {
