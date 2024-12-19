@@ -1725,6 +1725,13 @@ body {
 		font-weight: 600;
 		line-height: 120%; /* 16.8px */
 	}
+	&__col {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		max-width: 100%;
+		width: 100%;
+	}
 }
 
 .base-input {

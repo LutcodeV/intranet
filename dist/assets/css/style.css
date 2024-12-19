@@ -1954,6 +1954,19 @@ body {
   /* 16.8px */
 }
 
+.quiz-block__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 100%;
+  width: 100%;
+}
+
 .base-input {
   padding: 14px 24px;
   max-width: 100%;

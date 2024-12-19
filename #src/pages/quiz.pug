@@ -33,10 +33,17 @@ block main
 					.quiz-form__step.quiz-form__step--active
 						.quiz-block
 							.quiz-block__description
-								h3.quiz-block__title.h3 Тайм-менеджмент, успеваете ли вы реализовать задачи в запланированный график? *
-								p.quiz-block__text.body-2 Также как сплочённость команды профессионалов выявляет срочную потребность форм воздействия.
-							input.base-input(placeholder="Ваш ответ..." type="text" required)
+								h3.quiz-block__title.h3 Ваши данные
+								p.quiz-block__text.body-2 Оставьте ваши данные
+							.quiz-block__col
+								input.base-input(placeholder="Email *" type="email" required)
+								input.base-input(placeholder="ФИО *" type="text" required)
 					.quiz-form__step
+						//- .quiz-block
+						//- 	.quiz-block__description
+						//- 		h3.quiz-block__title.h3 Тайм-менеджмент, успеваете ли вы реализовать задачи в запланированный график? *
+						//- 		p.quiz-block__text.body-2 Также как сплочённость команды профессионалов выявляет срочную потребность форм воздействия.
+						//- 	input.base-input(placeholder="Ваш ответ..." type="text" required)
 						.quiz-block
 							.quiz-block__description
 								h3.quiz-block__title.h3 Тайм-менеджмент, успеваете ли вы реализовать задачи в запланированный график? *
